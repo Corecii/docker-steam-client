@@ -5,6 +5,7 @@ RUN wget -O ~/steam.deb https://steamcdn-a.akamaihd.net/client/installer/steam.d
 	sudo dpkg -i ~/steam.deb; \
 	sudo apt-get update && \
 	sudo apt-get install -fyqq && \
+	sudo apt-get install -yqq libc6 libgl1-mesa-dri libgl1-mesa-glx && \
 	sudo dpkg -i ~/steam.deb
 
 # Make steam deps installer not require user interaction:
