@@ -1,4 +1,4 @@
-FROM thewtex/opengl
+FROM thewtex/opengl:ubuntu1804
 
 # Download and install steam + base dependencies:
 RUN wget -O ~/steam.deb https://steamcdn-a.akamaihd.net/client/installer/steam.deb && \
